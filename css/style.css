@@ -1,0 +1,69 @@
+.area {
+    width: 700px; /* Tamaño específico de la tarjeta */
+    background-color: #bedce7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .area h3 {
+    margin-top: 0;
+  }
+
+  .area p {
+    margin-bottom: 0;
+  }
+  #cardsecundario {
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* Tamaño de imput */
+  #nombre, #apellido{
+    width: 250px; 
+  }
+  #sexo {
+    width: 50px; 
+  }
+  #nacimiento, #ingreso{
+    width: 120px; 
+  }
+
+
+  /*Escritura en una sola linea */
+  .form-group {
+    display: flex;
+    align-items: center;
+  }
+  .form-group label {
+    margin-right: 20px;
+  }
+  .form-group button{  
+    height: 25px;
+    font-size: 10px;
+  }
+
+
+  /*Ajustar el tamaño de la imagen*/
+  .card-body img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del card */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el aspecto de la imagen */
+    display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+  }
+
+  /* Ajuste de tamaños de letra */
+  .tamaño{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .btn:hover {
+    background-color: rgb(85, 224, 224); /* Cambia el color de fondo al gris al pasar el mouse por encima */
+  }
+
+  .form-control {
+    height: 25px; /* Ajusta la altura según tus necesidades */
+  }
+  .form-control[type="date"] {
+    font-size: 13px; /* Ajusta el tamaño de la letra según tus necesidades */
+    font-family: Arial, sans-serif; /* Ajusta la fuente según tus necesidades */
+  }
