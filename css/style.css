@@ -52,7 +52,7 @@
 
   /* Ajuste de tamaños de letra */
   .tamaño{
-    font-size: 12px;
+    font-size: 17px;
     font-weight: bold;
   }
 
@@ -66,4 +66,10 @@
   .form-control[type="date"] {
     font-size: 13px; /* Ajusta el tamaño de la letra según tus necesidades */
     font-family: Arial, sans-serif; /* Ajusta la fuente según tus necesidades */
+  }
+
+  .form-control [type="select"] {
+    font-size: 10px; /* Ajusta el tamaño de la letra según tus necesidades */
+    font-family: Arial, sans-serif; /* Ajusta la fuente según tus necesidades */
+    
   }
