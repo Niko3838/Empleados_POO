@@ -90,34 +90,25 @@
           <br>
           <div class="card" align="center">
             <h4>Cálculos</h4>
-            <div class="card-body tamaño">
-              <p >
-
-                 <div class="form-group"  >
-                    <div class="row">
-                      <div class="col-sm-5">
-                        <a href="#" class="btn btn-primary">Calcular edad</a> <br>
-                        <br> 
-                        <a href="#" class="btn btn-primary">Calcular Antiguedad</a>
-                        <br> 
-                        <br>
-                        <a href="#" class="btn btn-primary">Calcula prestaciones</a> 
-                      </div>
-                      <div class="col-sm-6">
-                        
-                        <input type="text" id="nombre" class="form-control custom-input " /> 
-                        <br>
-                        <br>
-                        
-                        <input type="text" id="nombre" class="form-control custom-input " /> <br>
-                        <br>
-                        <input type="text" id="nombre" class="form-control custom-input " /><br>
-                         </div>  
+            <div class="card-body tamaño">                
+              <div class="card" style="background-color: rgb(186, 221, 221);">
+                <div class="card-body tamaño">
+                    <div class="form-group">
+                        <button onclick="calcularEdad()" class="btn btn-primary" id="calcula_edad" >Calcular Edad</button><br>
+                        <input type="text" id="mostraredad" class="form-control custom-input " />
                     </div>
-                    
-                          
-                      
-              </p>
+                    <br>
+                    <div class="form-group">
+                        <button onclick="calcularAntiguedad()" class="btn btn-primary" id="calcula_edad" >Calcular Antiguedad</button><br>
+                        <input type="text" id="mostratantiguedad" class="form-control custom-input " />
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button onclick="" class="btn btn-primary" id="calcula_edad" >Calcular Prestaciones</button><br>
+                        <input type="text" id="mostrarprestaciones" class="form-control custom-input " />
+                    </div>
+                </div>
+              </div>  
             </div>
           </div>
           <br>
@@ -144,5 +135,6 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+    <script src="js/funciones.js"></script>
   </body>
 </html>
