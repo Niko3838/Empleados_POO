@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Taller POO</title>
+    <title>Registro Usuario</title>
     <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="https://img.freepik.com/vector-premium/icono-circulo-usuario-anonimo-ilustracion-vector-estilo-plano-sombra_520826-1931.jpg" type="image/x-icon" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -24,87 +24,97 @@
   <body>
     <br>
     <div class="area container">
-      <h4 align="center">Sistema de Empleados</h4>
+      <h3 align="center">Sistema de Empleados</h3>
       <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <h4 align="center">Datos Personales </h4>
-            <!--***********************************-->
-            <div class="col-sm-7">
-              <div class="card">
-                <div class="card-body tamaño">
-                      <!--Muestra los imput-->
-                      <div class="form-group">
-                          <label class="form-label">Nombre</label>
-                          <input type="text" id="nombre" class="form-control custom-input " />
-                      </div>
-                      <br>
-                      <div class="form-group">
-                        <label class="form-label">Apellido</label>
-                        <input type="text" id="apellido" class="form-control custom-input " />
-                      </div>
-                      <br>
-                      <div class="form-group">
-                        <label class="form-label">Sexo</label>
-                        <input type="text" id="sexo" class="form-control custom-input " />
-                      </div>
-                      <br>
-                      <div class="form-group">
-                        <label class="form-label">Fecha de Nacimiento</label>
-                        <input type="date" id="nacimiento" class="form-control custom-input " />
-                      </div>
-                      <br>
-                      <div class="form-group">
-                        <label class="form-label">Fecha de Ingreso</label>
-                        <input type="date" id="ingreso" class="form-control custom-input " />
-                      </div>
+        <div class="card-body areaDos">
+          <form action="">
+            <div class="row ">
+              <h5 align="left">Datos Personales </h5>
+              <!--***********************************-->
+              <div class="col-sm-7">
+                <div class="card">
+                  <div class="card-body tamaño">
+                        <!--Muestra los imput-->
+                        <div class="form-group">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" id="nombre" class="form-control custom-input " />
+                        </div>
+                        <br>
+                        <div class="form-group">
+                          <label class="form-label">Apellido</label>
+                          <input type="text" id="apellido" class="form-control custom-input " />
+                        </div>
+                        <br>
+                        <div class="form-group">
+                          <label class="form-label">Sexo</label>
+                          <div class="form-check form-check-inline form-group">
+                            <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
+                            <label class="form-check-label" for="masculino">Masculino</label>
+                          </div>
+                          <div class="form-check form-check-inline form-group">
+                            <input class="form-check-input" type="radio" name="sexo" id="femenino" value="femenino">
+                            <label class="form-check-label" for="femenino">Femenino</label>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                          <label class="form-label">Fecha de Nacimiento</label>
+                          <input type="date" id="nacimiento" class="form-control custom-input " />
+                        </div>
+                        <br>
+                        <div class="form-group">
+                          <label class="form-label">Fecha de Ingreso</label>
+                          <input type="date" id="ingreso" class="form-control custom-input " />
+                        </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!--***********************************-->
-            <div class="col-sm-5">
-              <div class="card">
-                <div class="card-body">
-                  <img src="https://img.freepik.com/vector-premium/icono-circulo-usuario-anonimo-ilustracion-vector-estilo-plano-sombra_520826-1931.jpg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--***********************************-->
-          <br>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="card">
-                <div class="card-body">
-                  <h6>Salario</h6>
-                  <div class="form-group container tamaño" >
-                      <label class="form-label">Salario</label>
-                      <input type="number" id="salario" class="form-control custom-input " />
-                      <a href="#" class="btn btn-primary">Calcula prestaciones</a>
+              <!--***********************************-->
+              <div class="col-sm-5">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="https://img.freepik.com/vector-premium/icono-circulo-usuario-anonimo-ilustracion-vector-estilo-plano-sombra_520826-1931.jpg" alt="">
+                    <br>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <!--***********************************-->
+            <br>
+            <h5>Salario</h5>
+            
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="form-group tamaño" id="cards-salario">
+                        <label class="form-label" >Salario:</label>
+                        <input type="number" id="salario" class="form-control custom-input "/>
+                        <button onclick="modificarSalario()" class="btn btn-secondary form-group" id="modificar-salario" type="button"> Modificar</button><br>
+                    </div>
+                  
+                </div>
+              </div>
+            
+          </form>
           <!--***********************************-->
           <br>
-          <div class="card" align="center">
-            <h4>Cálculos</h4>
+          <h5>Cálculos</h5>
+          <div class="card">
             <div class="card-body tamaño">                
-              <div class="card" style="background-color: rgb(186, 221, 221);">
+              <div class="card" style="background-color: #deeaee;">
                 <div class="card-body tamaño">
                     <div class="form-group">
-                        <button onclick="calcularEdad()" class="btn btn-primary" id="calcula_edad" >Calcular Edad</button><br>
+                        <button onclick="calcularEdad()" class="btn btn-primary form-group" id="calcula_edad" type="button"> Calcular Edad</button><br>
                         <input type="text" id="mostraredad" class="form-control custom-input " />
                     </div>
                     <br>
                     <div class="form-group">
-                        <button onclick="calcularAntiguedad()" class="btn btn-primary" id="calcula_edad" >Calcular Antiguedad</button><br>
+                        <button onclick="calcularAntiguedad()" class="btn btn-primary form-group" id="calcula_antuguedad" type="button">Calcular Antiguedad</button><br>
                         <input type="text" id="mostrarantiguedad" class="form-control custom-input " />
                     </div>
                     <br>
                     <div class="form-group">
-                        <button onclick="calcularPrestaciones()" class="btn btn-primary" id="calcula_edad" >Calcular Prestaciones</button><br>
+                        <button onclick="calcularPrestaciones()" class="btn btn-primary form-group" id="calcula_prestaciones" type="button">Calcular Prestaciones</button><br>
                         <input type="text" id="mostrarprestaciones" class="form-control custom-input " />
                     </div>
                 </div>
@@ -113,13 +123,12 @@
           </div>
         
           <br>
-          <div class="card" align="center">
-            <h4>Cálculos</h4>
-            <div class="card-body tamaño">
-              <p >
-                <a href="Opcion1.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Opcion 1</a>
-                <a href="Opcion2.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Opcion 2</a>
-               </p>
+          <h5>Puntos de Extension</h5>
+          <div class="card" >
+            <div class="card-body tamaño" align="center">
+                <a href="Opcion1.html" class="btn btn-secondary btn-lg active " role="button" aria-pressed="true">Opcion 1</a>
+                <a href="Opcion2.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Opcion 2</a>
+              
             </div>
           </div>
         

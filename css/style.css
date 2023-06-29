@@ -1,6 +1,6 @@
 .area {
     width: 700px; /* Tamaño específico de la tarjeta */
-    background-color: #bedce7;
+    background-color: #168bb5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -8,16 +8,23 @@
 
   .area h3 {
     margin-top: 0;
+    color: aliceblue;
   }
 
   .area p {
     margin-bottom: 0;
   }
-  #cardsecundario {
-    background-color: rgb(255, 255, 255);
+  
+  body {
+    background-image: url("https://periodico.udenar.edu.co/wp-content/uploads/2020/07/estudiantes-udenar-ipiales-.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .areaDos{
+    background-color: #deeaee;
   }
 
-  /* Tamaño de imput */
+  /* Tamaño de imput largo */
   #nombre, #apellido{
     width: 250px; 
   }
@@ -29,18 +36,7 @@
   }
 
 
-  /*Escritura en una sola linea */
-  .form-group {
-    display: flex;
-    align-items: rigth;
-  }
-  .form-group label {
-    margin-right: 50px;
-  }
-  .form-group button{  
-    height: 25px;
-    font-size: 10px;
-  }
+  
 
 
   /*Ajustar el tamaño de la imagen*/
@@ -50,27 +46,78 @@
     display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
   }
 
-  /* Ajuste de tamaños de letra */
+
+  /* Ajuste de tamaños de letra general */
   .tamaño{
-    font-size: 16px;
+    font-size: 12.5px;
     font-weight: bold;
   }
-
-  .btn:hover {
-    background-color: rgb(30, 233, 233); /* Cambia el color de fondo al gris al pasar el mouse por encima */
-  }
-
-  .form-control {
-    height: 25px; /* Ajusta la altura según tus necesidades */
+  #nombre,#apellido,#salario{/*ajuste de tamaño letra interna imput*/
+    font-size: 13px;
   }
   .form-control[type="date"] {
     font-size: 13px; /* Ajusta el tamaño de la letra según tus necesidades */
     font-family: Arial, sans-serif; /* Ajusta la fuente según tus necesidades */
   }
-
   .form-control [type="select"] {
     font-size: 10px; /* Ajusta el tamaño de la letra según tus necesidades */
     font-family: Arial, sans-serif; /* Ajusta la fuente según tus necesidades */
     
   }
+
+  /* EFECTOS */
+  .btn:hover {
+    background-color: rgb(17, 155, 155); /* Cambia el color de fondo al gris al pasar el mouse por encima */
+  }
+
+  
+  /*AJUSTES DE IMPUT*/
+  .form-control {
+    height: 25px; /* Ajusta la altura según tus necesidades */
+  }
+  .form-group {/*Escritura en una sola linea */
+    display: flex;
+    align-items: rigth;
+  }
+  .form-group label { /*ajuste de espacio entre label e input*/
+    margin-right: auto;
+  }
+  #mostraredad,#mostrarantiguedad,#mostrarprestaciones{/*Ajustar el tamaño del imput de Calculos*/
+    width: 250px;
+    text-align: left;
+  }
+ 
+
+
+  /*BOTONES*/
+  .form-group button{ /*ajuste de tamaño de letra y boton de btn calcular*/ 
+    height: 25px;
+    font-size: 10px;
+    width: auto;
+  }
+  #calcula_edad{
+    margin-right: 80px;
+  }
+  #calcula_antuguedad{
+    margin-right: 45px;
+  }
+  #calcula_prestaciones{
+    margin-right: 35px;
+  }
+  
+
+
+  /*MODIFICACION DE CARDS*/
+  #cards-salario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+
+
+  
+
+  
   
