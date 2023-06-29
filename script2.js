@@ -8,8 +8,8 @@ let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
 const winningMessage = () => `El jugador ${currentPlayer} ha ganado!`;
-const drawMessage = () => `Game ended in a draw!`;
-const currentPlayerTurn = () => `Es turno DE ${currentPlayer}`;
+const drawMessage = () => `Nadie ha ganado!`;
+const currentPlayerTurn = () => `Es turno De ${currentPlayer}`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
 
