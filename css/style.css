@@ -32,10 +32,10 @@
   /*Escritura en una sola linea */
   .form-group {
     display: flex;
-    align-items: center;
+    align-items: rigth;
   }
   .form-group label {
-    margin-right: 20px;
+    margin-right: 40px;
   }
   .form-group button{  
     height: 25px;
@@ -57,7 +57,7 @@
   }
 
   .btn:hover {
-    background-color: rgb(85, 224, 224); /* Cambia el color de fondo al gris al pasar el mouse por encima */
+    background-color: rgb(30, 233, 233); /* Cambia el color de fondo al gris al pasar el mouse por encima */
   }
 
   .form-control {
