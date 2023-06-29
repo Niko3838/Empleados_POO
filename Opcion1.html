@@ -22,85 +22,135 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+ 
     <br>
     <div class="area container">
       <h4 align="center">Sistema de Empleados</h4>
       <div class="card">
         <div class="card-body">
           <div class="row">
-            <h3 align="center">Formacion Académica </h3>
-            <!--***********************************-->
-            <div class="col-sm-12">
-              <div class="container-fluid">
+            <h4 align="center">Informacion Académica </h4>
+            <div class="col-sm-8">             
+              <div class="card">
+                <h5 align="center">Primaria </h5>
                 <div class="card-body tamaño">
-                      <!--Muestra los imput-->
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">Basica Primaria</label>
+                        <select class="custom-select custom-select-lg mb-3">
+                          <option selected>Seleccione </option>
+                          <option value="1">Si</option>
+                          <option value="2">No</option> 
+                        </select>
+                      </div>
+                        <div class="form-group">
+                        <label for="exampleFormControlFile1"></label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <br>
+                      <div class="form-group">
+                        <label class="form-label">Fecha de Graduacion</label>
+                        <input type="date" id="nacimiento" class="form-control custom-input " />
+                      </div>
                       
-                      <div class="form-group">
-                        <label for="exampleFormControlSelect1">Formacion basica primaria</label>
-                        <select class="custom-select custom-select-lg mb-3">
-                          <option selected>Seleccione </option>
-                          <option value="1">Si</option>
-                          <option value="2">No</option> 
-                        </select>
-                      </div>
-                      <br>
-                      <form>
-                        <div class="form-group">
-                          <label for="exampleFormControlFile1">Certificado</label>
-                          <input type="file" class="form-control-file" id="bachillerato">
-                        </div>
-                      </form>
-                      <br>
-                      <div class="form-group">
-                        <label for="exampleFormControlSelect1">Formacion basica Secundaria</label>
-                        <select class="custom-select custom-select-lg mb-3">
-                          <option selected>Seleccione </option>
-                          <option value="1">Si</option>
-                          <option value="2">No</option> 
-                        </select>
-                      </div>
-                      <br>
-                      <form>
-                        <div class="form-group">
-                          <label for="exampleFormControlFile1">Diploma Bachiller</label>
-                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                      </form>
-                      <br>
-                      <div class="form-group">
-                        <label for="exampleFormControlSelect1">Formacion Universitaria</label>
-                        <select class="custom-select custom-select-lg mb-3">
-                          <option selected>Seleccione </option>
-                          <option value="1">Si</option>
-                          <option value="2">No</option> 
-                        </select>
-                      </div>
-                      <br>
-                      <form>
-                        <div class="form-group">
-                          <label for="exampleFormControlFile1">Diploma Universitario</label>
-                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                      </form>
-
-                      
+                     
                 </div>
               </div>
             </div>
-            <!--***********************************-->
-            
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/Icono-Primaria_Mesa-de-trabajo-1.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
           <!--***********************************-->
-          <br>
+          <div class="row">
           
+            <div class="col-sm-8"> 
+              <br>  
+              <br>          
+              <div class="card">
+                <h5 align="center">Bachillerato </h5>
+                <div class="card-body tamaño">
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">¿Basica Secundaria?</label>
+                        <select class="custom-select custom-select-lg mb-3">
+                          <option selected>Seleccione </option>
+                          <option value="1">Si</option>
+                          <option value="2">No</option> 
+                        </select>
+                      </div>
+                        <div class="form-group"  >
+                        <label for="exampleFormControlFile1"></label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <br>
+                      <div class="form-group">
+                        <label class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" id="nacimiento" class="form-control custom-input " />
+                      </div>
+                      
+                     
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <br>
+              <br>
+              
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/1cd89105aff262eeaf6dae60607762f7.png_wh860.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
           <!--***********************************-->
-          <br>
-         
-          <br>
-
-          <div class="card">
-            <h4 align="center">Opciones</p>
+          <div class="row">
+          
+            <div class="col-sm-8"> 
+              <br> 
+              <br>           
+              <div class="card">
+                <h5 align="center">Universitario </h5>
+                <div class="card-body tamaño">
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">¿Basica Secundaria?</label>
+                        <select class="custom-select custom-select-lg mb-3">
+                          <option selected>Seleccione </option>
+                          <option value="1">Si</option>
+                          <option value="2">No</option> 
+                        </select>
+                      </div>
+                        <div class="form-group"  >
+                        <label for="exampleFormControlFile1"></label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <br>
+                      <div class="form-group">
+                        <label class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" id="nacimiento" class="form-control custom-input " />
+                      </div>
+                      
+                     
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <br> <br>
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/universidad.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- Fin informacion academica  -->
+            <br><br>
+           <div class="card">   
             <div class="card-body tamaño" align="center">
-              <p>
+              <p> 
                 <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Guardar</a>
                 <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Regresar</a>
                  
@@ -108,12 +158,9 @@
             </div>
           </div>
 
-        
-
         </div>
       </div>
     </div>
-
     
 
     <!-- MDB -->
