@@ -24,14 +24,14 @@
   <body>
  
     <br>
-    <div class="area container">
+    <div class="area container" >
       <h4 align="center">Sistema de Empleados</h4>
       <div class="card">
         <div class="card-body">
           <div class="row">
             <h4 align="center">Informacion Académica </h4>
-            <div class="col-sm-8">             
-              <div class="card">
+            <div class="col-sm-8" >             
+              <div class="card" >
                 <h5 align="center">Primaria </h5>
                 <div class="card-body tamaño">
                       <div class="form-group">
@@ -42,13 +42,13 @@
                           <option value="2">No</option> 
                         </select>
                       </div>
-                        <div class="form-group">
-                        <label for="exampleFormControlFile1"></label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      <div class="form-outline">                       
+                        <input type="text" id="typeText" class="form-control" />                       
+                        <label class="form-label" for="typeText">Ingrese el nombre de la escuela</label>
                       </div>
                       <br>
                       <div class="form-group">
-                        <label class="form-label">Fecha de Graduacion</label>
+                        <label class="form-label">Finalizó estudios:</label>
                         <input type="date" id="nacimiento" class="form-control custom-input " />
                       </div>
                       
@@ -81,13 +81,13 @@
                           <option value="2">No</option> 
                         </select>
                       </div>
-                        <div class="form-group"  >
-                        <label for="exampleFormControlFile1"></label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      <div class="form-outline">                       
+                        <input type="text" id="typeText" class="form-control" />                       
+                        <label class="form-label" for="typeText">Ingrese el nombrel colegio</label>
                       </div>
                       <br>
                       <div class="form-group">
-                        <label class="form-label">Fecha de Nacimiento</label>
+                        <label class="form-label">Finalizó estudios:</label>
                         <input type="date" id="nacimiento" class="form-control custom-input " />
                       </div>
                       
@@ -116,20 +116,61 @@
                 <h5 align="center">Universitario </h5>
                 <div class="card-body tamaño">
                       <div class="form-group">
-                        <label for="exampleFormControlSelect1">¿Basica Secundaria?</label>
+                        <label for="exampleFormControlSelect1">¿Titulo Universitario?</label>
                         <select class="custom-select custom-select-lg mb-3">
                           <option selected>Seleccione </option>
                           <option value="1">Si</option>
                           <option value="2">No</option> 
                         </select>
                       </div>
-                        <div class="form-group"  >
-                        <label for="exampleFormControlFile1"></label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      <div class="form-outline">                       
+                        <input type="text" id="typeText" class="form-control" />                       
+                        <label class="form-label" for="typeText">Ingrese el nombre de la Universidad</label>
                       </div>
                       <br>
                       <div class="form-group">
-                        <label class="form-label">Fecha de Nacimiento</label>
+                        <label class="form-label">Finalizó estudios:</label>
+                        <input type="date" id="nacimiento" class="form-control custom-input " />
+                      </div>
+                      
+                     
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <br> <br>
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/universidad.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--***********************************-->
+          <div class="row">
+          
+            <div class="col-sm-8"> 
+              <br> 
+              <br>           
+              <div class="card">
+                <h5 align="center">Estudios Adicionales </h5>
+                <div class="card-body tamaño">
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">¿Cursos Adicionales?</label>
+                        <select class="custom-select custom-select-lg mb-3">
+                          <option selected>Seleccione </option>
+                          <option value="1">Si</option>
+                          <option value="2">No</option> 
+                        </select>
+                      </div>
+                      <div class="form-outline">                       
+                        <input type="text" id="typeText" class="form-control" />                       
+                        <label class="form-label" for="typeText">Ingrese el nombre de la Institucion</label>
+                      </div>
+                      <br>
+                      <div class="form-group">
+                        <label class="form-label">Finalizó estudios:</label>
                         <input type="date" id="nacimiento" class="form-control custom-input " />
                       </div>
                       
