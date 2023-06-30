@@ -5,12 +5,14 @@ section {
     border-radius: 10px;
     width: 400px;
     margin: auto;
-    background-color: #fff;
+    background-color: #168bb5;
     margin-top: 75px;
     box-shadow: 0px 10px 36px 16px rgba(0,0,0,0.1);
+    
 }
 .game--title {
     padding-top: 15px;
+    color: #f8f0f0;
 }
 .game--container {
     display: grid;
@@ -19,6 +21,7 @@ section {
     margin: 120px;
     margin-bottom: 10px;
     margin-top: 10px;
+    
 }
 .cell {
     font-family: "Poppins", sans-serif;
@@ -29,6 +32,7 @@ section {
     cursor: pointer;
     line-height: 50px;
     font-size: 20px;
+    
 }
 button {
     margin-bottom: 20px;
@@ -38,8 +42,10 @@ button {
     color: #fff;
     background-color: #b71b1b;
     cursor: pointer;
+    
 }
 button:hover {
     transition: 0.25s;
     background-color: #000000;
+   
 }
