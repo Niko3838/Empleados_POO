@@ -158,20 +158,20 @@
                 <div class="card-body tamaño">
                       <div class="form-group">
                         <label for="exampleFormControlSelect1">¿Cursos Adicionales?</label>
-                        <select class="custom-select custom-select-lg mb-3">
+                        <select class="custom-select custom-select-lg mb-3" id="cursoAdicional">
                           <option selected>Seleccione </option>
                           <option value="1">Si</option>
                           <option value="2">No</option> 
                         </select>
                       </div>
                       <div class="form-outline">                       
-                        <input type="text" id="typeText" class="form-control" />                       
+                        <input type="text" id="adicionalNomInsti" class="form-control" />                       
                         <label class="form-label" for="typeText">Ingrese el nombre de la Institucion</label>
                       </div>
                       <br>
                       <div class="form-group">
                         <label class="form-label">Finalizó estudios:</label>
-                        <input type="date" id="nacimiento" class="form-control custom-input " />
+                        <input type="date" id="adicionalFinEstudio" class="form-control custom-input " />
                       </div>
                       
                      
@@ -194,7 +194,7 @@
               <p> 
                 <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Guardar</a>
                 <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Regresar</a>
-                 
+                <button onclick="mostrarDatos()" class="btn btn-primary form-group" id="" type="button"> Mostrar Datos</button>
               </p>
             </div>
           </div>
@@ -208,5 +208,6 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+    <script src="js/funciones.js"></script>
   </body>
 </html>
