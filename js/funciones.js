@@ -74,8 +74,6 @@ function modificarSalario() {
 }
 
 
-
-
 window.onload = function() {
     var today = new Date().toISOString().split('T')[0];
     document.getElementById("ingreso").setAttribute("max", today);
@@ -89,11 +87,34 @@ window.onload = function() {
 
 
 function mostrarDatos(){
+    var npi = document.getElementById("nomPriInstitucion").value;
+    var fpi= document.getElementById("fechaPriInstitucion").value;
+
+    var nsi = document.getElementById("nomSecuInstitucion").value;
+    var fsi= document.getElementById("fechaSecuInstitucion").value;
+
+    var tu = document.getElementById("tituloUniversitario").value;
+    var ntu= document.getElementById("nomTituloUniversitaro").value;
+    var ftu= document.getElementById("fehaTituloUniversitario").value;
+
     var ca = document.getElementById("cursoAdicional").value;
     var ani= document.getElementById("adicionalNomInsti").value;
     var afe= document.getElementById("adicionalFinEstudio").value;
 
-    alert("Cursos adicionales: "+ ca 
+    alert("Informacion de Estudios\n"
+    +"\nEstudios Primarios"
+    +"\nNombre de Institucion : " + npi 
+    +"\nFecha de Finalizacion : "+fpi
+
+    +"\n\nEstudios Secundarios"
+    +"\nNombre de Institucion : " + nsi 
+    +"\nFecha de Finalizacion : "+fsi
+
+    +"\n\nTitulo Universitario: "+tu
+    +"\nNombre del Titulo: "+ntu
+    +"\nFecha de Obtecion del titulo: " +ftu
+
+    +"\n\nCursos adicionales: "+ ca 
     +"\nNombre de Institucion : " + ani 
     +"\nFin del estudio Adicional: "+afe);
 
