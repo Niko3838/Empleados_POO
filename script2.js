@@ -96,10 +96,12 @@ function mostrarInfo(){
     var apellido= document.getElementById("apellido").value;
     var fecha=document.getElementById("nacimiento").value; 
     var fechain=document.getElementById("ingreso").value;
+    var salario=document.getElementById("salario").value;
     alert("Nombres: "+ nombre 
     +"\nApellidos: "+ apellido
     +"\nFecha Nacimiento: "+ fecha
     +"\nFecha Ingreso: "+ fechain
+    +"\nSalario :"+ salario
     );
 
 }
