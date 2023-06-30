@@ -7,7 +7,7 @@ let currentPlayer = "X";
 
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
-const winningMessage = () => `El jugador ${currentPlayer} ha ganado!`;
+const winningMessage = () => `El jugador ${currentPlayer} ha ganado!` ;
 const drawMessage = () => `Nadie ha ganado!`;
 const currentPlayerTurn = () => `Es turno De ${currentPlayer}`;
 
