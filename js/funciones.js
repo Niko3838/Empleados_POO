@@ -82,3 +82,21 @@ window.onload = function() {
     document.getElementById("ingreso").addEventListener("input", validarFecha);
 }
 
+
+/*OPCION 1*/
+
+
+
+
+function mostrarDatos(){
+    var ca = document.getElementById("cursoAdicional").value;
+    var ani= document.getElementById("adicionalNomInsti").value;
+    var afe= document.getElementById("adicionalFinEstudio").value;
+
+    alert("Cursos adicionales: "+ ca 
+    +"\nNombre de Institucion : " + ani 
+    +"\nFin del estudio Adicional: "+afe);
+
+}
+
+
